@@ -46,10 +46,12 @@ public class Delivery  {
     public static void addToDeliveryList(OrderPlaced orderPlaced){
 
         /** Example 1:  new item 
+         */
         Delivery delivery = new Delivery();
+        delivery.setCustomerId(orderPlaced.getCustomerId());
+        delivery.setOrderId(orderPlaced.getId());
         repository().save(delivery);
 
-        */
 
         /** Example 2:  finding and process
         
