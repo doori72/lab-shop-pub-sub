@@ -61,9 +61,8 @@ public class Delivery  {
         delivery.setOrderId(orderPlaced.getId());
         repository().save(delivery);
 
-        DeliveryStarted deliveryStarted = new DeliveryStarted(delivery);
-        deliveryStarted.publishAfterCommit();
-        */
+        // DeliveryStarted deliveryStarted = new DeliveryStarted(delivery);
+        // deliveryStarted.publishAfterCommit();
 
         /** Example 2:  finding and process
         
