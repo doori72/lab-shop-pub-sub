@@ -46,6 +46,12 @@ public class Order  {
     
     
     private Double amount;
+    
+    
+    
+    
+    
+    private String status;
 
     @PostPersist
     public void onPostPersist(){
